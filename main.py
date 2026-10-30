@@ -71,7 +71,7 @@ def upload_file_from_url(bucket_name, file_path, file_url, acl='public-read'):
             message = "Không lấy được ảnh"
             status = False
 
-    except:
+    except Exception:
         message = "Lỗi khi up ảnh"
         status = False
 
